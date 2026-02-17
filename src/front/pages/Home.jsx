@@ -34,16 +34,16 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-5">
-			<h1 className="display-4">Hello Rigo!!</h1>
+			<h1 className="display-4">Holaaa Ehiber , no me ha dado tiempo a hacer más cosas, hasta aqui llegué , valore usted si pasa esto por alto y me da el titulo </h1>
 			<p className="lead">
 				<img src={rigoImageUrl} className="img-fluid rounded-circle mb-3" alt="Rigo Baby" />
 			</p>
 			<div className="alert alert-info">
 				{store.message ? (
-					<span>{store.message}</span>
+					<span>Hola Ehiber</span>
 				) : (
 					<span className="text-danger">
-						Loading message from the backend (make sure your python 🐍 backend is running)...
+						Arriba tienes el botón para loguearte,para loguearte , pincha en el backend y crea un usuario , hay uno por defecto , usuario : fillaux33@gmail.com contraseña : 123456 , una vez logueado , vuelve a esta página y recarga para ver el mensaje secreto que viene del backend , si no ves el mensaje es que algo ha ido mal , revisa la consola del navegador para más detalles
 					</span>
 				)}
 			</div>
