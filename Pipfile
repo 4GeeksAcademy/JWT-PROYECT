@@ -4,6 +4,8 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pycodestyle = "*"
+flake8 = "*"
 
 [packages]
 flask = "*"
@@ -15,11 +17,11 @@ python-dotenv = "*"
 flask-cors = "*"
 gunicorn = "*"
 cloudinary = "*"
-flask-admin = "==2.0.0"
 typing-extensions = "*"
-flask-jwt-extended = "==4.6.0"
-wtforms = "==3.1.2"
+flask-jwt-extended = "*"
+wtforms = "*"
 sqlalchemy = "*"
+flask-admin = "*"
 
 [requires]
 python_version = "3.13"

@@ -10,13 +10,22 @@ from api.models import db
 from api.routes import api
 from api.admin import setup_admin
 from api.commands import setup_commands
+from flask import Flask
+from flask_cors import CORS
+from flask_jwt_extended import JWTManager
+app = Flask(__name__)
+CORS(app)
+
+
+
+app.config["JWT_SECRET_KEY"] = "super-secret"
+jwt = JWTManager(app)
 
 # from models import Person
 
 ENV = "development" if os.getenv("FLASK_DEBUG") == "1" else "production"
 static_file_dir = os.path.join(os.path.dirname(
     os.path.realpath(__file__)), '../dist/')
-app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 # database condiguration
